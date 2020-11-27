@@ -1,0 +1,50 @@
+.offers {
+	padding: 20px 0px 60px 0px;
+
+	// .offers__title
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	// .offers__description
+
+	&__description {
+		max-width: $item-col2;
+		padding-bottom: 30px;
+	}
+
+	// .offers__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	// .offers__item
+	
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex: 0 0 $item-col4;
+		text-align: center;
+		margin: 20px 0px;
+		&>span{
+			max-width: 180px;
+		}
+		&>span:first-child{
+			font-family: 'icons';
+			color: $main-color;
+			font-size: 80px;
+			line-height: 80px;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+@media (max-width: 769px) {
+	.offers {
+		padding: 10px 0px 20px 0px;
+	}
+}

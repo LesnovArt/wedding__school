@@ -1,0 +1,71 @@
+@font-face {
+	font-family: "icons";
+	src: url('src/assets/fonts/icons.eot');
+	src: url('src/assets/fonts/icons.eot?#iefix') format('eot'),
+		url('src/assets/fonts/icons.woff2') format('woff2'),
+		url('src/assets/fonts/icons.woff') format('woff'),
+		url('src/assets/fonts/icons.ttf') format('truetype'),
+		url('src/assets/fonts/icons.svg#icons') format('svg');
+}
+
+.icon:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-body:before {
+	content: "\E001";
+}
+
+.icon-cherry:before {
+	content: "\E002";
+}
+
+.icon-fb:before {
+	content: "\E005";
+}
+
+.icon-group:before {
+	content: "\E006";
+}
+
+.icon-ico03:before {
+	content: "\E009";
+}
+
+
+.icon-ico06:before {
+	content: "\E00C";
+}
+
+.icon-ico08:before {
+	content: "\E00E";
+}
+
+.icon-insta:before {
+	content: "\E00F";
+}
+
+.icon-people:before {
+	content: "\E010";
+}
+
+.icon-pictures:before {
+	content: "\E011";
+}
+
+.icon-right:before {
+	content: "\E012";
+}
+
+.icon-twit:before {
+	content: "\E014";
+}

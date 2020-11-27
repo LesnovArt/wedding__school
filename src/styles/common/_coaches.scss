@@ -1,0 +1,163 @@
+.coaches {
+	padding: 20px 0px 80px 0px;
+	// .coaches__title
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	// .coaches__description
+
+	&__description {
+		max-width: $item-col2;
+		margin-bottom: 5px;
+	}
+}
+
+.slider{
+	margin: 0px	-8px;
+}
+
+.slide {
+	// .slide__inner
+	max-width: calc(#{$item-col2} - 16px);
+	padding: 25px 0px;
+	margin: 0px	8px;
+	
+	// .slide__row
+	
+	&__row {
+		display: flex;
+		align-items: center;
+		min-width: $item-col1;
+		@include block_shadow;
+	}
+	
+	// .slide__img
+	
+	&__img {
+		flex: 0 0 298px;
+		max-height: 440px;
+		&__img img {
+			width: $item-col1;
+			height: $item-col1;
+		}
+	}
+	
+	// .slide__info
+	
+	&__info {
+		flex: 1 1 auto;
+		padding: 40px;
+	}
+
+	// .slide__btn-wrapper
+
+	&__btn-wrapper {
+		margin-top: 80px;
+		&>button:hover{
+			border-color: #fff;
+			background-color: $main-color;
+			color:#fff
+		}
+	}
+}
+
+	// .slide__navigation
+.navigation__wrapper{
+	margin: 0 auto;
+	max-width: 160px;
+	max-height: 30px;
+}
+.navigation__row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&>div{
+		padding: 10px;
+	}
+}
+.position {
+	margin-bottom: 24px;
+}
+.number {
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+.name {
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+.info-list {
+	margin: 8px 0px;
+	&>span:nth-child(odd){
+		opacity: 0.5;
+		margin-right: 8px;
+	}
+}
+.slick-next{
+	position: relative;
+	top: 39px;
+	left: 689px;
+	padding: 10px 40px;
+	border: 2px solid $main-color;
+	background-color: #fff;
+	outline: none;
+	border-radius: 3px;
+	cursor: pointer;
+	color: $main-color;
+	font-weight: 600;
+	text-align: center;
+	font-family: $Mont;	
+}
+.slick-prev{
+	position: relative;
+	bottom: -575px;
+	left: 466px;
+	border: 2px solid $main-color;
+	background-color: #fff;
+	outline: none;
+	border-radius: 3px;
+	cursor: pointer;
+	color: $main-color;
+	font-weight: 600;
+	text-align: center;
+	font-family: $Mont;	
+	padding: 10px 40px;
+}
+
+
+@media (max-width: 769px) {
+	.coaches {
+		padding: 10px 0px 20px 0px;
+	}
+	// .slide__img
+
+	.slide{
+		&__info {
+			display: flex;
+			flex-direction: column;
+		}
+		&__btn-wrapper {
+			// position: relative;
+			&>button{
+				// position: absolute;
+				// right: 0px;
+				// bottom: 0;
+				margin-top: 80px;
+				max-width: 33px;
+				max-height: 33px;
+				border-radius: 50%;
+				padding: 15px;
+				&>span{
+					display: none;
+				}
+			}
+			&>button:hover{
+				border-color: #fff;
+				background-color: $main-color;
+				color:#fff
+			}
+		}
+	}
+}
