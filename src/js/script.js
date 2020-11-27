@@ -9,47 +9,40 @@ $(document).ready(function () {
 
 // slick-slider
 
-$(document).ready(function(){
+$(document).ready(function () {
 	$('.slider').slick({
-		centerMode: true,
-		centerPadding: '0px',
-		slidesToShow: 2,
-		arrows: true,
-		responsive: [
+		centerMode    : true,
+		centerPadding : '0px',
+		slidesToShow  : 2,
+		arrows        : true,
+		responsive    : [
 			{
-				breakpoint: 1350,
-				settings: {
-					arrows: true,
-					centerMode: true,
-					centerPadding: '10px',
-					slidesToShow: 1.1
-				}
+				breakpoint : 1350,
+				settings   : {
+					arrows        : true,
+					centerMode    : true,
+					centerPadding : '10px',
+					slidesToShow  : 1.1,
+				},
 			},
 			{
-				breakpoint: 769,
-				settings: {
-					arrows: true,
-					centerMode: true,
-					centerPadding: '10px',
-					slidesToShow: 1.1
-				}
+				breakpoint : 769,
+				settings   : {
+					arrows        : true,
+					centerMode    : true,
+					centerPadding : '10px',
+					slidesToShow  : 1.1,
+				},
 			},
 			{
-				breakpoint: 480,
-				settings: {
-					arrows: false,
-					centerMode: true,
-					centerPadding: '40px',
-					slidesToShow: 1
-				}
-			}
-		]
+				breakpoint : 480,
+				settings   : {
+					arrows        : false,
+					centerMode    : true,
+					centerPadding : '40px',
+					slidesToShow  : 1,
+				},
+			},
+		],
 	});
 });
-
-
-
-
-
-
-
